@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    setInterval(showNotification, 4 * 60 * 1000); // 5 minutes in milliseconds
+    setInterval(showNotification, 4 * 60 * 1000); // 4 minutes in milliseconds
 });
 document.addEventListener('DOMContentLoaded', () => {
     if (!('Notification' in window)) {
@@ -40,5 +40,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    setInterval(showNotification, 6 * 60 * 1000); // 3 minutes in milliseconds
+    setInterval(showNotification, 7 * 60 * 1000); // 7 minutes in milliseconds
 });
