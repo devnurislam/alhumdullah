@@ -20,15 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(showNotification, 4 * 60 * 1000); // 4 minutes in milliseconds
 
-    function showNotification() {
-        if (Notification.permission === 'granted') {
-            new Notification('Reminder', {
-                body: 'Say & Feel Astagfirullahh!',
-            });
-        }
-    }
+    // function showNotification() {
+    //     if (Notification.permission === 'granted') {
+    //         new Notification('Reminder', {
+    //             body: 'Say & Feel Astagfirullahh!',
+    //         });
+    //     }
+    // }
 
-    setInterval(showNotification, 7 * 60 * 1000); // 7 minutes in milliseconds
+    // setInterval(showNotification, 7 * 60 * 1000); // 7 minutes in milliseconds
 
 });
 
