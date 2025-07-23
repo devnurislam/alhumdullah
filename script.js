@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    setInterval(showNotification, 4 * 60 * 1000); // 4 minutes in milliseconds
+    setInterval(showNotification, 10 * 60 * 1000); // 10 minutes in milliseconds
+
 
     // function showNotification() {
     //     if (Notification.permission === 'granted') {
