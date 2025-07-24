@@ -25,7 +25,9 @@ p {
     margin-top: 0;
 }
 
- .full-width-image {
-      width: 100%;
-      height: auto;
+ .full-display-image {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
       display: block;
+    }
