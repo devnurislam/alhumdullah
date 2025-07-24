@@ -19,17 +19,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setInterval(showNotification, 10 * 60 * 1000); // 10 minutes in milliseconds
-
- function showNotification() {
-      const notification = document.getElementById("notification");
-      notification.style.display = "block";
-
-      // Optional: hide after 3 seconds
-      setTimeout(() => {
-        notification.style.display = "none";
-      }, 3000);
-    }
+// this is button purpose 
     
+ function showNotification() {
+      // Ask for permission if not granted
+      if (Notification.permission === "granted") {
+        new Notification("abc");
+      } else if (Notification.permission !== "denied") {
+        Notification.requestPermission().then(permission => {
+          if (permission === "granted") {
+            new Notification("abc");
+          } else {
+            alert("Notification permission denied.");
+          }
+        });
+      } else {
+        alert("Notification permission denied previously.");
+      }
+    }
 
     // function showNotification() {
     //     if (Notification.permission === 'granted') {
