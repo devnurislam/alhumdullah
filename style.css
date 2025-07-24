@@ -27,7 +27,7 @@ p {
 
  .full-display-image {
       width: 100vw;
-      height: 90vh;
+      height: 100vh;
       object-fit: cover;
       display: block;
     }
