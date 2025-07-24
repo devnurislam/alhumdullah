@@ -20,6 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(showNotification, 10 * 60 * 1000); // 10 minutes in milliseconds
 
+ function showNotification() {
+      const notification = document.getElementById("notification");
+      notification.style.display = "block";
+
+      // Optional: hide after 3 seconds
+      setTimeout(() => {
+        notification.style.display = "none";
+      }, 3000);
+    }
+    
 
     // function showNotification() {
     //     if (Notification.permission === 'granted') {
